@@ -1,12 +1,20 @@
 import streamlit as st
 
 # タイトルの表示
-st.title('My app')
+st.title('岡山県の新型コロナ感染状況')
 
 # 文書の表示
-st.write("Good morning")
+# st.write("Good morning")
 
 # DataFrame の表示
+import pandas as pd
+st.dataframe(pd.DataFrame({
+    '集計日': ["2020/3/22","2020/3/23","2020/3/24","2020/3/25","2020/3/26","2020/3/27","2020/3/28"],
+    '曜日': ["日","月","火","水","木","金","土"],
+    '感染者数': ["1","0","0","0","0","1","1"]
+}))
+
+# table の表示
 import pandas as pd
 st.table(pd.DataFrame({
     'first column': [1, 2, 3, 4],
