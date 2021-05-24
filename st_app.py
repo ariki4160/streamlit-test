@@ -158,6 +158,6 @@ st.write("私は", age, '歳です。')
 # 最小値0.0、最大値100.0、初期値(25.0,75.0)で動くスライダー
 st.markdown('## 範囲スライダーでの選択')
 values = st.slider(
-    'Select a range of values',
+    '範囲を選択してください。',
    0.0, 100.0, (25.0, 75.0))
-st.write('Values:', values)
+st.write('選択した範囲は', values, 'です。')
